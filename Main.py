@@ -295,7 +295,7 @@ st.markdown("""
     <div class="profile">
             <h2 style='color: #747477'> Associate Data Scientist </h2>Sebagai seorang Associate Data Scientist, saya memiliki Latar belakang kuat dalam ilmu data, machine learning, dan statistik. Mengembangkan sistem dan model untuk klasifikasi penyakit jantung menggunakan SVM & Algoritma Genetika, Analisis sentimen terhadap topik seperti Covid-19 dan Ferdy Sambo menggunakan Naive Bayes dan Algoritma Genetika, Keahlian dalam pemrosesan teks, keamanan informasi termasuk enkripsi dengan Caesar Cipher & Vigenere Cipher dan yang terakhir yaitu pengalaman dalam deteksi objek otomatis menggunakan teknik seperti YOLO. Selain itu saya memiliki kemampuan untuk berkomunikasi dengan baik dan bekerja dalam tim. Komitmen untuk inovasi, terus belajar di bidang ilmu data dan siap untuk tantangan baru dan menciptakan dampak positif melalui analisis data dan kecerdasan buatan.
             <p style='font-size:25px;margin-top:25px;'>
-                <a style='padding-right:10px;color:#747477;' href="www.linkedin.com/in/jeff20" target="_blank"><i class="fa fa-linkedin icon"></i></a>
+                <a style='padding-right:10px;color:#747477;' href="https://www.linkedin.com/in/jeff20" target="_blank"><i class="fa fa-linkedin icon"></i></a>
                 <a style='padding-right:10px;color:#747477;' href="https://www.instagram.com/jefri.mln/" target="_blank"><i class="fa fa-instagram icon"></i></a>
                 <a style='padding-right:10px;color:#747477;' href="https://www.youtube.com/@jefrimaulana9043/featured" target="_blank"><i class="fa fa-youtube icon"></i></a>  
             </p>
