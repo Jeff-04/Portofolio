@@ -1,6 +1,7 @@
 from streamlit_antd_components import antd_menu, MenuItem
 import streamlit as st
 import time
+import webbrowser
 
 st.set_page_config(layout='wide')
 # Styling
@@ -314,6 +315,8 @@ with col1:
         st.markdown("<p style='text-align:justify; color:#747477;'>Klasifikasi penyakit stroke menggunakan Support Vector Machine dan Algoritma Genetika.</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            webbrowser.open_new_tab("https://colab.research.google.com/drive/1Fg3gIyk_UyGKhj-RtGVJgTCVd2XLgMCf?usp=sharing")
 
 with col2:
     form = st.empty()
