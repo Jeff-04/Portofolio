@@ -329,6 +329,11 @@ with col2:
         st.markdown("<p style='text-align:justify; color:#747477;'>Sistem yang membandingkan beberapa produk di E-Commerce Indonesia menggunakan cosine similarity.</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 with col3:
     form = st.empty()
@@ -338,6 +343,11 @@ with col3:
         st.markdown("<p style='text-align:justify; color:#747477;'>Melakukan analisis sentimen twitter terhadap kasus covid-19 menggunakan naive bayes dan algoritma genetika</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('https://colab.research.google.com/drive/19WPr8DfI9xaMYTyCBKcBN4Peghjz9PWg?usp=sharing')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 st.write("")
 col1, col2, col3= st.columns(3, gap='large')
@@ -350,6 +360,11 @@ with col1:
         st.markdown("<p style='text-align:justify; color:#747477;'>sistem seleksi beasiswa menggunakan support vector machine dan sistem pendukung keputusan SMART</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('https://github.com/Jeff-04/Seminar_tematik_beasiswa')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 with col2:
     form = st.empty()
@@ -359,6 +374,11 @@ with col2:
         st.markdown("<p style='text-align:justify; color:#747477;'>Sistem enkripsi dan dekripsi text menggunakan caesar cipher dan viginere cipher.</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('https://github.com/Jeff-04/Crypto_Cippher_V2')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 with col3:
     form = st.empty()
@@ -368,6 +388,11 @@ with col3:
         st.markdown("<p style='text-align:justify; color:#747477;'>Sistem training otomatis untuk object detection, dimulai dari pengambilan data, anotasi hingga training.</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('https://medium.com/@mystearica989/object-detection-automation-yolov3-b77c3438dfd6')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 st.write("")
 col1, col2, col3= st.columns(3, gap='large')
@@ -380,6 +405,11 @@ with col1:
         st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi slot parkir studi kasus pemkot Yogyakarta menggunakan YOLO V3</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 with col2:
     form = st.empty()
@@ -389,3 +419,8 @@ with col2:
         st.markdown("<p style='text-align:justify; color:#747477;'>Melakukan analisis sentimen twitter terhadap kasus ferdy sambo dari tahun 2022 - 2023</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('https://colab.research.google.com/drive/1pmFBfxH1AfgsU_PmfBV_QheYygBkjYft?usp=sharing')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
