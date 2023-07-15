@@ -309,9 +309,9 @@ col1, col2, col3= st.columns(3, gap='large')
 with col1:
     form = st.empty()
     with form.form('test1'):
-        st.markdown("<h5 align='center'> Heart Disease Classification (SVM & Genetic Algorithm)</h5>", unsafe_allow_html=True)
+        st.markdown("<h5 align='center'> Stroke Classification (SVM & Genetic Algorithm)</h5>", unsafe_allow_html=True)
         st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Klasifikasi penyakit jantung menggunakan Support Vector Machine dan Algoritma Genetika.</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align:justify; color:#747477;'>Klasifikasi penyakit stroke menggunakan Support Vector Machine dan Algoritma Genetika.</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
 
