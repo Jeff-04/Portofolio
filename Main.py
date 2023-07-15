@@ -1,7 +1,6 @@
 from streamlit_antd_components import antd_menu, MenuItem
 import streamlit as st
 import time
-import webbrowser
 
 st.set_page_config(layout='wide')
 # Styling
@@ -316,7 +315,10 @@ with col1:
         st.write("")
         submit = st.form_submit_button("Explore")
         if submit:
-            webbrowser.open_new_tab("https://colab.research.google.com/drive/1Fg3gIyk_UyGKhj-RtGVJgTCVd2XLgMCf?usp=sharing")
+            js = "window.open('https://colab.research.google.com/drive/1Fg3gIyk_UyGKhj-RtGVJgTCVd2XLgMCf?usp=sharing')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
 with col2:
     form = st.empty()
