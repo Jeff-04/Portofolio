@@ -282,7 +282,7 @@ with st.sidebar.container():
     #         </div>
     #     </div>""", unsafe_allow_html=True)
     #     st.markdown("<p align='center'>English</p>", unsafe_allow_html=True)
-    buffer, col1 = st.columns([2.2, 5])
+    buffer, col1 = st.columns([.2, 5])
     with col1:
         list_skill = ["Python", "Statistics", "Machine Learning", "Natural Language Processing", "Computer Vision", "Spark", "SQL", "Data Analytics", "Artificial Intelligence (AI)"]
         options = st.multiselect(
