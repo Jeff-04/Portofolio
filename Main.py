@@ -282,15 +282,13 @@ with st.sidebar.container():
     #         </div>
     #     </div>""", unsafe_allow_html=True)
     #     st.markdown("<p align='center'>English</p>", unsafe_allow_html=True)
-    buffer, col1 = st.columns([.2, 5])
-    with col1:
-        list_skill = ["Python", "Statistics", "Machine Learning", "Natural Language Processing", "Computer Vision", "Spark", "SQL", "Data Analytics", "Artificial Intelligence (AI)"]
-        options = st.multiselect(
-            '',
-            list_skill,
-            list_skill,
-            disabled=True
-        )
+    list_skill = ["Python", "Statistics", "Machine Learning", "Natural Language Processing", "Computer Vision", "Spark", "SQL", "Data Analytics", "Artificial Intelligence (AI)"]
+    options = st.multiselect(
+        '',
+        list_skill,
+        list_skill,
+        disabled=True
+    )
     # level_skill = ["80 %", "80 %", "85 %", "75 %", "80 %", "85 %", "85 %", "80 %"]
     # for skill, level in zip(list_skill, level_skill):
     #     buffer, col1, col2 = st.columns([.2, 5, 1])
