@@ -5,6 +5,23 @@ from bokeh.models.widgets import Div
 
 st.set_page_config(layout='wide')
 # Styling
+# Multiselect width
+st.markdown(
+    """
+    <style>
+        .stMultiSelect [data-baseweb="tag"] {
+            height: fit-content;
+        }
+        .stMultiSelect [data-baseweb="tag"] span[title] {
+            white-space: normal; max-width: 100%; overflow-wrap: anywhere;
+        }
+        .stSelectbox [data-baseweb="select"] div[aria-selected="true"] {
+            white-space: normal; overflow-wrap: anywhere;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 # Profile
 st.markdown("""
 <style>
@@ -266,16 +283,22 @@ with st.sidebar.container():
     #     </div>""", unsafe_allow_html=True)
     #     st.markdown("<p align='center'>English</p>", unsafe_allow_html=True)
        
-    list_skill = ["Python", "Machine Learning", "Natural Language Processing", "Computer Vision", "Spark", "SQL", "Data Analytics"]
-    level_skill = ["80 %", "80 %", "85 %", "75 %", "80 %", "85 %", "85 %", "80 %"]
-    for skill, level in zip(list_skill, level_skill):
-        buffer, col1, col2 = st.columns([.2, 5, 1])
-        with col1:
-            bar = st.progress(0)
-            bar.progress(int(level.split()[0]), text=skill)
-        with col2:
-            st.write("")
-            st.write(level)
+    list_skill = ["Python", "Statistics", "Machine Learning", "Natural Language Processing", "Computer Vision", "Spark", "SQL", "Data Analytics", "Artificial Intelligence (AI)"]
+    options = st.multiselect(
+        '',
+        list_skill,
+        list_skill,
+        disabled=True
+    )
+    # level_skill = ["80 %", "80 %", "85 %", "75 %", "80 %", "85 %", "85 %", "80 %"]
+    # for skill, level in zip(list_skill, level_skill):
+    #     buffer, col1, col2 = st.columns([.2, 5, 1])
+    #     with col1:
+    #         bar = st.progress(0)
+    #         bar.progress(int(level.split()[0]), text=skill)
+    #     with col2:
+    #         st.write("")
+    #         st.write(level)
     
     st.markdown("<hr style='height:1px; width:100%; border-width:0; color:#747477; background-color:#747477'>", unsafe_allow_html=True)
     buffer, col1 = st.columns([.2, 5])
