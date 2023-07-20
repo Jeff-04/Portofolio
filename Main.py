@@ -442,7 +442,7 @@ with col2:
         st.write("")
         submit = st.form_submit_button("Explore")
         if submit:
-            js = "window.open('https://colab.research.google.com/drive/1pmFBfxH1AfgsU_PmfBV_QheYygBkjYft?usp=sharing')"  # New tab or window
+            js = "window.open('https://colab.research.google.com/drive/1JSRPzITAwCDVdN5fvQFFMtqW9BgBvP7F?usp=sharing')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
