@@ -383,7 +383,7 @@ with col1:
         st.write("")
         submit = st.form_submit_button("Explore")
         if submit:
-            js = "window.open('https://github.com/Jeff-04/Seminar_tematik_beasiswa')"  # New tab or window
+            js = "window.open('https://github.com/Jeff-04/Scholarship_system')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
