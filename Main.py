@@ -436,7 +436,7 @@ with col1:
 with col2:
     form = st.empty()
     with form.form('test8'):
-        st.markdown("<h5 align='center'> Sentiment Analysis Ferdy Sambo using Naive Bayes</h5>", unsafe_allow_html=True)
+        st.markdown("<h5 align='center'> Sentiment Analysis Ferdy Sambo</h5>", unsafe_allow_html=True)
         st.write("")
         st.markdown("<p style='text-align:justify; color:#747477;'>Melakukan analisis sentimen twitter terhadap kasus ferdy sambo dari tahun 2022 - 2023</p>", unsafe_allow_html=True)
         st.write("")
