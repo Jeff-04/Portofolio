@@ -231,15 +231,15 @@ items = [
 with st.sidebar.container():
     buffer, col1 = st.columns([2.2, 5])
     with col1:
-        st.image("circle_me.png", width=100)
+        st.image("Images/circle_me.png", width=100)
     st.markdown("<p style=text-align:center;'> Jefri Maulana </p>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align:center; color: #747477'> Associate Data Scientist</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; color: #747477'> Data Scientist</p>", unsafe_allow_html=True)
     st.markdown("<hr style='height:1px; width:100%; border-width:0; color:#747477; background-color:#747477'>", unsafe_allow_html=True)
 
     buffer, col1 = st.columns([.2, 5])
     with col1:
-        st.markdown("<p style='color: white; font-size : 15px'> Residence : Sleman</p>", unsafe_allow_html=True)
-        st.markdown("<p style='color: white; font-size : 15px'> City : Sleman</p>", unsafe_allow_html=True)
+        st.markdown("<p style='color: white; font-size : 15px'> Residence : Pemalang</p>", unsafe_allow_html=True)
+        st.markdown("<p style='color: white; font-size : 15px'> City : Pemalang</p>", unsafe_allow_html=True)
         st.markdown("<p style='color: white; font-size : 15px'> Age : 23</p>", unsafe_allow_html=True)
 
     st.markdown("<hr style='height:1px; width:100%; border-width:0; color:#747477; background-color:#747477'>", unsafe_allow_html=True)
@@ -316,7 +316,7 @@ st.markdown("""
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="profile1">
     <div class="profile">
-            <h2 style='color: #747477'> Associate Data Scientist </h2>Sebagai lulusan baru dengan hasrat tinggi untuk Ilmu Data, saya memiliki beragam keahlian dalam analitik data, analisis data eksplorasi, statistik, dan pemodelan pembelajaran mesin. Pengalaman saya menerapkan teknik ini ke proyek dunia nyata, seperti memprediksi pemberian beasiswa, telah mengasah kemampuan saya untuk menganalisis dan menguraikan data yang rumit. Dengan latar belakang pendidikan yang kuat dalam ilmu data dan semangat kolaboratif, saya berhasil dalam lingkungan tim yang digerakkan oleh data. Saya bersemangat tentang tren yang muncul dalam AI dan data besar dan ingin menyumbangkan solusi inovatif ke dunia Ilmu Data yang terus berkembang.
+            <h2 style='color: #747477'> Data Scientist </h2>Sebagai lulusan baru dengan hasrat tinggi untuk Ilmu Data, saya memiliki beragam keahlian dalam analitik data, analisis data eksplorasi, statistik, dan pemodelan pembelajaran mesin. Pengalaman saya menerapkan teknik ini ke proyek dunia nyata, seperti memprediksi pemberian beasiswa, telah mengasah kemampuan saya untuk menganalisis dan menguraikan data yang rumit. Dengan latar belakang pendidikan yang kuat dalam ilmu data dan semangat kolaboratif, saya berhasil dalam lingkungan tim yang digerakkan oleh data. Saya bersemangat tentang tren yang muncul dalam AI dan data besar dan ingin menyumbangkan solusi inovatif ke dunia Ilmu Data yang terus berkembang.
             <p style='font-size:25px;margin-top:25px;'>
                 <a style='padding-right:10px;color:#747477;' href="https://www.linkedin.com/in/jefrimaulana/" target="_blank"><i class="fa fa-linkedin icon"></i></a>
                 <a style='padding-right:10px;color:#747477;' href="https://www.instagram.com/jefri.mln/" target="_blank"><i class="fa fa-instagram icon"></i></a>
@@ -332,13 +332,13 @@ col1, col2, col3= st.columns(3, gap='large')
 with col1:
     form = st.empty()
     with form.form('test1'):
-        st.markdown("<h5 align='center'> Stroke Classification (SVM & Genetic Algorithm)</h5>", unsafe_allow_html=True)
+        st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
         st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Klasifikasi penyakit stroke menggunakan Support Vector Machine dan Algoritma Genetika.</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning berbasis yang diintegrasikan dengan API (FastAPI).</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
         if submit:
-            js = "window.open('https://colab.research.google.com/drive/1Fg3gIyk_UyGKhj-RtGVJgTCVd2XLgMCf?usp=sharing')"  # New tab or window
+            js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
@@ -438,7 +438,7 @@ with col2:
     with form.form('test8'):
         st.markdown("<h5 align='center'> Sentiment Analysis Ferdy Sambo</h5>", unsafe_allow_html=True)
         st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Melakukan analisis sentimen twitter terhadap kasus ferdy sambo dari tahun 2022 - 2023</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align:justify; color:#747477;'>Melakukan analisis sentimen twitter terhadap kasus ferdy sambo menggunakan Machine Learning dari tahun 2022 - 2023.</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
         if submit:
@@ -446,3 +446,27 @@ with col2:
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
+
+with col3:
+    form = st.empty()
+    with form.form('test9'):
+        st.markdown("<h5 align='center'> Stroke Classification (SVM & Genetic Algorithm)</h5>", unsafe_allow_html=True)
+        st.write("")
+        st.markdown("<p style='text-align:justify; color:#747477;'>Klasifikasi penyakit stroke menggunakan Support Vector Machine dan Algoritma Genetika.</p>", unsafe_allow_html=True)
+        st.write("")
+        submit = st.form_submit_button("Explore")
+        if submit:
+            js = "window.open('https://colab.research.google.com/drive/1Fg3gIyk_UyGKhj-RtGVJgTCVd2XLgMCf?usp=sharing')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+        # st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
+        # st.write("")
+        # st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning berbasis API (FastAPI).</p>", unsafe_allow_html=True)
+        # st.write("")
+        # submit = st.form_submit_button("Explore")
+        # if submit:
+        #     js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
+        #     html = '<img src onerror="{}">'.format(js)
+        #     div = Div(text=html)
+        #     st.bokeh_chart(div)
