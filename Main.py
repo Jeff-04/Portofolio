@@ -334,7 +334,7 @@ with col1:
     with form.form('test1'):
         st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
         st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning berbasis yang diintegrasikan dengan API (FastAPI).</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
         if submit:
