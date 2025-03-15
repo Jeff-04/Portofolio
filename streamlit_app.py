@@ -242,7 +242,7 @@ with st.sidebar.container():
     with col1:
         st.markdown("<p style='color: white; font-size : 15px'> Residence : Pemalang</p>", unsafe_allow_html=True)
         st.markdown("<p style='color: white; font-size : 15px'> City : Pemalang</p>", unsafe_allow_html=True)
-        st.markdown("<p style='color: white; font-size : 15px'> Age : 23</p>", unsafe_allow_html=True)
+        st.markdown("<p style='color: white; font-size : 15px'> Age : 24</p>", unsafe_allow_html=True)
 
     st.markdown("<hr style='height:1px; width:100%; border-width:0; color:#747477; background-color:#747477'>", unsafe_allow_html=True)
 
@@ -426,6 +426,11 @@ with col3:
             st.bokeh_chart(div)
 
 st.write("")
+st.markdown("""
+    <div style="padding: 20px; border: 2px solid #4CAF50; border-radius: 10px; display: inline-block; background-color: #f1f1f1;">
+        <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 16px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
 col1, col2, col3= st.columns(3, gap='large')
 
 with col1:
