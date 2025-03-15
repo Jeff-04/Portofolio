@@ -349,7 +349,8 @@ with col1:
             # st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
             # webbrowser.open("https://github.com/Jeff-04/MediDetect")\
 
-            components.iframe("https://github.com/Jeff-04/MediDetect")
+            # components.iframe("https://github.com/Jeff-04/MediDetect")
+            webbrowser.open_new_tab("https://github.com/Jeff-04/MediDetect")
 
 with col2:
     form = st.empty()
