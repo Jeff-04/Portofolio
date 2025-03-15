@@ -304,7 +304,7 @@ with st.sidebar.container():
     st.markdown("<hr style='height:1px; width:100%; border-width:0; color:#747477; background-color:#747477'>", unsafe_allow_html=True)
     buffer, col1 = st.columns([.2, 5])
     with col1:
-        st.markdown("<a href='https://drive.google.com/file/d/1i4xgH-QM_JbjdHFgj9tIP4X-xjTTZjS4/view?usp=sharing' style='color: #747477; font-size:17px'> Download CV</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://drive.google.com/file/d/1lzBRSitz7J11B_IDHuXzYYA3taLgU7pE/view?usp=sharing' style='color: #747477; font-size:17px'> Download CV</a>", unsafe_allow_html=True)
 
 
     # for percent_complete in range(100):
