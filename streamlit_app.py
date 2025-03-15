@@ -330,13 +330,13 @@ st.markdown("""
 
 st.write("### My Projects")
 
-import streamlit as st
+# Membuat 3 kolom dengan layout st.columns
+col1, col2, col3 = st.columns(3)
 
-# Desain 3 kotak dalam satu baris
-st.markdown("""
-    <div style="display: flex; justify-content: space-between; gap: 10px;">
-        <!-- Kotak pertama -->
-        <div style="width: 30%; height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
+# Kotak pertama di kolom pertama
+with col1:
+    st.markdown("""
+        <div style="height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
             <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
                 Scholarship Selection System using SVM & SMART
             </h3>
@@ -347,22 +347,12 @@ st.markdown("""
                 <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
             </div>
         </div>
-        
-        <!-- Kotak kedua -->
-        <div style="width: 30%; height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
-            <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
-                Scholarship Selection System using SVM & SMART
-            </h3>
-            <p style="font-size: 12px; color: white; margin-bottom: 10px;">
-                Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
-            </p>
-            <div style="display: flex; justify-content: center; align-items: center; flex-grow: 1;">
-                <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
-            </div>
-        </div>
+    """, unsafe_allow_html=True)
 
-        <!-- Kotak ketiga -->
-        <div style="width: 30%; height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
+# Kotak kedua di kolom kedua
+with col2:
+    st.markdown("""
+        <div style="height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
             <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
                 Scholarship Selection System using SVM & SMART
             </h3>
@@ -373,8 +363,23 @@ st.markdown("""
                 <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
             </div>
         </div>
-    </div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
+
+# Kotak ketiga di kolom ketiga
+with col3:
+    st.markdown("""
+        <div style="height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
+            <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
+                Scholarship Selection System using SVM & SMART
+            </h3>
+            <p style="font-size: 12px; color: white; margin-bottom: 10px;">
+                Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+            </p>
+            <div style="display: flex; justify-content: center; align-items: center; flex-grow: 1;">
+                <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
 
 col1, col2, col3= st.columns(3, gap='large')
 
