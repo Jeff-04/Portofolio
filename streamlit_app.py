@@ -2,6 +2,7 @@ from streamlit_antd_components import antd_menu, MenuItem
 import streamlit as st
 import time
 from bokeh.models.widgets import Div
+import streamlit.components.v1 as components
 
 st.set_page_config(layout='wide')
 # Styling
@@ -337,11 +338,21 @@ with col1:
         st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).</p>", unsafe_allow_html=True)
         st.write("")
         submit = st.form_submit_button("Explore")
+        # if submit:
+        #     js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
+        #     html = '<img src onerror="{}">'.format(js)
+        #     div = Div(text=html)
+        #     st.bokeh_chart(div)
+
         if submit:
+            # JavaScript yang membuka URL di tab baru
             js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
+            
+            # HTML dengan onerror yang memicu JavaScript
             html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            
+            # Menampilkan HTML dengan st.components.v1.html()
+            components.html(html, height=100) 
 
 with col2:
     form = st.empty()
