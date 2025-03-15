@@ -336,7 +336,7 @@ col1, col2, col3 = st.columns(3, gap='large')
 # Kotak pertama di kolom pertama
 with col1:
      st.markdown("""
-        <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
             <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
                 Medical Detection (MediDetect)
             </h6>
