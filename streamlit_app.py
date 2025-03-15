@@ -3,6 +3,7 @@ import streamlit as st
 import time
 from bokeh.models.widgets import Div
 import streamlit.components.v1 as components
+import webbrowser
 
 st.set_page_config(layout='wide')
 # Styling
@@ -345,7 +346,8 @@ with col1:
         #     st.bokeh_chart(div)
 
         if submit:
-            st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
+            # st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
+            webbrowser.open("https://github.com/Jeff-04/MediDetect")
 
 with col2:
     form = st.empty()
