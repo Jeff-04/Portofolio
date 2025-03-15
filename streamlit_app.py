@@ -329,20 +329,67 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.write("### My Projects")
+
+import streamlit as st
+
+# Desain 3 kotak dalam satu baris
+st.markdown("""
+    <div style="display: flex; justify-content: space-between; gap: 10px;">
+        <!-- Kotak pertama -->
+        <div style="width: 30%; height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
+            <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
+                Scholarship Selection System using SVM & SMART
+            </h3>
+            <p style="font-size: 12px; color: white; margin-bottom: 10px;">
+                Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+            </p>
+            <div style="display: flex; justify-content: center; align-items: center; flex-grow: 1;">
+                <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+            </div>
+        </div>
+        
+        <!-- Kotak kedua -->
+        <div style="width: 30%; height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
+            <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
+                Scholarship Selection System using SVM & SMART
+            </h3>
+            <p style="font-size: 12px; color: white; margin-bottom: 10px;">
+                Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+            </p>
+            <div style="display: flex; justify-content: center; align-items: center; flex-grow: 1;">
+                <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+            </div>
+        </div>
+
+        <!-- Kotak ketiga -->
+        <div style="width: 30%; height: 150px; padding: 20px; border: 2px solid #fff; border-radius: 10px; background-color: #63E0F7; text-align: center;">
+            <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
+                Scholarship Selection System using SVM & SMART
+            </h3>
+            <p style="font-size: 12px; color: white; margin-bottom: 10px;">
+                Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+            </p>
+            <div style="display: flex; justify-content: center; align-items: center; flex-grow: 1;">
+                <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+            </div>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
 col1, col2, col3= st.columns(3, gap='large')
 
 with col1:
-    st.markdown("""
-    <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
-        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
-            Medical Detection (MediDetect)
-        </h6>
-        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
-            Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
-        </p>
-        <a href="https://github.com/Jeff-04/MediDetect" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
-    </div>
-""", unsafe_allow_html=True)
+#     st.markdown("""
+#     <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+#         <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+#             Medical Detection (MediDetect)
+#         </h6>
+#         <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+#             Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+#         </p>
+#         <a href="https://github.com/Jeff-04/MediDetect" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+#     </div>
+# """, unsafe_allow_html=True)
 
         # st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
         # st.write("")
