@@ -331,7 +331,7 @@ st.markdown("""
 st.write("### My Projects")
 
 # Membuat 3 kolom dengan layout st.columns
-col1, col2, col3 = st.columns(3, gap='large')
+col1, col2, col3 = st.columns(3, gap='small')
 
 # Kotak pertama di kolom pertama
 with col1:
