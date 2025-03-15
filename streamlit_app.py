@@ -345,14 +345,8 @@ with col1:
         #     st.bokeh_chart(div)
 
         if submit:
-            # JavaScript yang membuka URL di tab baru
             js = "window.open('https://github.com/Jeff-04/MediDetect', '_blank')"
-            
-            # HTML dengan onerror yang memicu JavaScript
-            html = f'<img src="invalid_image.png" onerror="{js}">'
-            
-            # Menampilkan HTML dengan st.markdown dan menjalankan JavaScript
-            st.markdown(html, unsafe_allow_html=True)
+            st.markdown(f"<script>{js}</script>", unsafe_allow_html=True)
 
 with col2:
     form = st.empty()
