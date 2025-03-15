@@ -345,8 +345,7 @@ with col1:
         #     st.bokeh_chart(div)
 
         if submit:
-            js = "window.open('https://github.com/Jeff-04/MediDetect', '_blank')"
-            st.markdown(f"<script>{js}</script>", unsafe_allow_html=True)
+            st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
 
 with col2:
     form = st.empty()
