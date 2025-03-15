@@ -427,11 +427,11 @@ with col3:
 
 st.write("")
 st.markdown("""
-    <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #000; text-align: center;">
-        <h5 style="color: white; font-weight: bold; margin-bottom: 10px;">
+    <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #000;">
+        <h5 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
             Scholarship Selection System using SVM & SMART
         </h5>
-        <p style="font-size: 15px; color: white; margin-bottom: 10px;">
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
             Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
         </p>
         <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
