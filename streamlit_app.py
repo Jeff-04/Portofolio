@@ -352,12 +352,12 @@ with col2:
      st.markdown("""
         <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
             <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
-                Medical Detection (MediDetect)
+                Comparison Shopping Engine using Cosine Similarity
             </h6>
             <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
-                Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+                Sistem yang membandingkan beberapa produk di E-Commerce Indonesia menggunakan cosine similarity.
             </p>
-            <a href="https://github.com/Jeff-04/MediDetect" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+            <a href="" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
         </div>
     """, unsafe_allow_html=True)
 
@@ -366,172 +366,95 @@ with col3:
      st.markdown("""
         <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
             <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
-                Medical Detection (MediDetect)
+                Sentiment Analysis Covid - 19 using Naive Bayes & GA
             </h6>
             <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
-                Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+                Melakukan analisis sentimen twitter terhadap kasus covid-19 menggunakan naive bayes dan algoritma genetika.
             </p>
-            <a href="https://github.com/Jeff-04/MediDetect" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+            <a href="https://colab.research.google.com/drive/19WPr8DfI9xaMYTyCBKcBN4Peghjz9PWg?usp=sharing" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
         </div>
     """, unsafe_allow_html=True)
 
-col1, col2, col3= st.columns(3, gap='large')
-
-# with col1:
-#     st.markdown("""
-#     <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
-#         <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
-#             Medical Detection (MediDetect)
-#         </h6>
-#         <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
-#             Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
-#         </p>
-#         <a href="https://github.com/Jeff-04/MediDetect" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
-#     </div>
-# """, unsafe_allow_html=True)
-
-        # st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
-        # st.write("")
-        # st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).</p>", unsafe_allow_html=True)
-        # st.write("")
-        # submit = st.form_submit_button("Explore")
-        # # if submit:
-        # #     js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
-        # #     html = '<img src onerror="{}">'.format(js)
-        # #     div = Div(text=html)
-        # #     st.bokeh_chart(div)
-
-        # if submit:
-        #     # st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
-        #     # webbrowser.open("https://github.com/Jeff-04/MediDetect")\
-
-        #     # components.iframe("https://github.com/Jeff-04/MediDetect")
-        #     webbrowser.open_new_tab("https://github.com/Jeff-04/MediDetect")
-
-with col2:
-    form = st.empty()
-    with form.form('test2'):
-        st.markdown("<h5 align='center'> Comparison Shopping Engine using Cosine Similarity </h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem yang membandingkan beberapa produk di E-Commerce Indonesia menggunakan cosine similarity.</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
-
-with col3:
-    form = st.empty()
-    with form.form('test3'):
-        st.markdown("<h5 align='center'> Sentiment Analysis Covid - 19 using Naive Bayes & GA</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Melakukan analisis sentimen twitter terhadap kasus covid-19 menggunakan naive bayes dan algoritma genetika</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('https://colab.research.google.com/drive/19WPr8DfI9xaMYTyCBKcBN4Peghjz9PWg?usp=sharing')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
-
 st.write("")
-col1, col2, col3= st.columns(3, gap='large')
+col1, col2, col3= st.columns(3, gap='small')
 
 with col1:
-    form = st.empty()
-    with form.form('test4'):
-        st.markdown("<h5 align='center'>Scholarship Selection System using SVM & SMART</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>sistem seleksi beasiswa menggunakan support vector machine dan sistem pendukung keputusan SMART</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('https://github.com/Jeff-04/Scholarship_system')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+     st.markdown("""
+    <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+            Scholarship Selection System using SVM & SMART
+        </h6>
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+            Sistem seleksi beasiswa menggunakan support vector machine dan sistem pendukung keputusan SMART
+        </p>
+        <a href="https://github.com/Jeff-04/Scholarship_system" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
 
 with col2:
-    form = st.empty()
-    with form.form('test5'):
-        st.markdown("<h5 align='center'>Cryptography Systems for Text Security (Caesar & Viginere)</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem enkripsi dan dekripsi text menggunakan caesar cipher dan viginere cipher.</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('https://github.com/Jeff-04/Crypto_Cippher_V2')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+     st.markdown("""
+    <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+            Cryptography Systems for Text Security (Caesar & Viginere)
+        </h6>
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+            Sistem enkripsi dan dekripsi text menggunakan caesar cipher dan viginere cipher.
+        </p>
+        <a href="https://github.com/Jeff-04/Crypto_Cippher_V2" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
 
 with col3:
-    form = st.empty()
-    with form.form('test6'):
-        st.markdown("<h5 align='center'>Automated Object Detection (ODA)</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem training otomatis untuk object detection, dimulai dari pengambilan data, anotasi hingga training.</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('https://medium.com/@mystearica989/object-detection-automation-yolov3-b77c3438dfd6')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
-
+     st.markdown("""
+    <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+            Automated Object Detection (ODA)
+        </h6>
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+            Sistem training otomatis untuk object detection, dimulai dari pengambilan data, anotasi hingga training.
+        </p>
+        <a href="https://medium.com/@mystearica989/object-detection-automation-yolov3-b77c3438dfd6" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
+    
 st.write("")
-col1, col2, col3= st.columns(3, gap='large')
+col1, col2, col3= st.columns(3, gap='small')
 
 with col1:
-    form = st.empty()
-    with form.form('test7'):
-        st.markdown("<h5 align='center'>Parking Detection System using YOLO</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi slot parkir studi kasus pemkot Yogyakarta menggunakan YOLO V3</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+     st.markdown("""
+    <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+            Parking Detection System using YOLO
+        </h6>
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+            Sistem deteksi slot parkir studi kasus pemkot Yogyakarta menggunakan YOLO V3.
+        </p>
+        <a href="" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
 
 with col2:
-    form = st.empty()
-    with form.form('test8'):
-        st.markdown("<h5 align='center'> Sentiment Analysis Ferdy Sambo</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Melakukan analisis sentimen twitter terhadap kasus ferdy sambo dari tahun 2022 - 2023.</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('https://colab.research.google.com/drive/1JSRPzITAwCDVdN5fvQFFMtqW9BgBvP7F?usp=sharing')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+     st.markdown("""
+    <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+            Sentiment Analysis Ferdy Sambo
+        </h6>
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+            Melakukan analisis sentimen twitter terhadap kasus ferdy sambo dari tahun 2022 - 2023.
+        </p>
+        <a href="https://colab.research.google.com/drive/1JSRPzITAwCDVdN5fvQFFMtqW9BgBvP7F?usp=sharing" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
 
 with col3:
-    form = st.empty()
-    with form.form('test9'):
-        st.markdown("<h5 align='center'> Stroke Classification (SVM & Genetic Algorithm)</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Klasifikasi penyakit stroke menggunakan Support Vector Machine dan Algoritma Genetika.</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
-        if submit:
-            js = "window.open('https://colab.research.google.com/drive/1Fg3gIyk_UyGKhj-RtGVJgTCVd2XLgMCf?usp=sharing')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
-        # st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
-        # st.write("")
-        # st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning berbasis API (FastAPI).</p>", unsafe_allow_html=True)
-        # st.write("")
-        # submit = st.form_submit_button("Explore")
-        # if submit:
-        #     js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
-        #     html = '<img src onerror="{}">'.format(js)
-        #     div = Div(text=html)
-        #     st.bokeh_chart(div)
+     st.markdown("""
+    <div style="width: 250px; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+            Stroke Classification (SVM & Genetic Algorithm)
+        </h6>
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+            Klasifikasi penyakit stroke menggunakan Support Vector Machine dan Algoritma Genetika.
+        </p>
+        <a href="https://colab.research.google.com/drive/1Fg3gIyk_UyGKhj-RtGVJgTCVd2XLgMCf?usp=sharing" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
