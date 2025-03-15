@@ -346,13 +346,13 @@ with col1:
 
         if submit:
             # JavaScript yang membuka URL di tab baru
-            js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
+            js = "window.open('https://github.com/Jeff-04/MediDetect', '_blank')"
             
             # HTML dengan onerror yang memicu JavaScript
-            html = '<img src onerror="{}">'.format(js)
+            html = f'<img src="invalid_image.png" onerror="{js}">'
             
-            # Menampilkan HTML dengan st.components.v1.html()
-            components.html(html, height=100) 
+            # Menampilkan HTML dengan st.markdown dan menjalankan JavaScript
+            st.markdown(html, unsafe_allow_html=True)
 
 with col2:
     form = st.empty()
