@@ -431,7 +431,7 @@ st.markdown("""
         <h5 style="color: white; font-weight: bold; margin-bottom: 10px;">
             Scholarship Selection System using SVM & SMART
         </h5>
-        <p style="font-size: 12px; color: white; margin-bottom: 10px;">
+        <p style="font-size: 15px; color: white; margin-bottom: 10px;">
             Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
         </p>
         <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
