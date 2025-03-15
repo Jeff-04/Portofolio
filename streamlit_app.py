@@ -428,7 +428,9 @@ with col3:
 st.write("")
 st.markdown("""
     <div style="padding: 20px; border: 2px solid #4CAF50; border-radius: 10px; display: inline-block; background-color: #f1f1f1;">
+        <p> Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI). </p>
         <a href="https://www.example.com" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #4CAF50; border-radius: 5px; font-size: 16px;">explore</a>
+        
     </div>
 """, unsafe_allow_html=True)
 col1, col2, col3= st.columns(3, gap='large')
