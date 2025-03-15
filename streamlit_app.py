@@ -378,7 +378,7 @@ st.markdown("""
 
 col1, col2, col3= st.columns(3, gap='large')
 
-with col1:
+# with col1:
 #     st.markdown("""
 #     <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
 #         <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
