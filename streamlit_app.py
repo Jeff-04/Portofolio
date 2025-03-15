@@ -427,7 +427,7 @@ with col3:
 
 st.write("")
 st.markdown("""
-    <div style="width: 25%; height: 120px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #000; text-align: center;">
+    <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #000; text-align: center;">
         <h3 style="color: white; font-weight: bold; margin-bottom: 10px;">
             Scholarship Selection System using SVM & SMART
         </h3>
