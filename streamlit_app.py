@@ -347,7 +347,9 @@ with col1:
 
         if submit:
             # st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
-            webbrowser.open("https://github.com/Jeff-04/MediDetect")
+            # webbrowser.open("https://github.com/Jeff-04/MediDetect")\
+
+            components.iframe("https://github.com/Jeff-04/MediDetect")
 
 with col2:
     form = st.empty()
