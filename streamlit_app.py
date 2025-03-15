@@ -332,25 +332,35 @@ st.write("### My Projects")
 col1, col2, col3= st.columns(3, gap='large')
 
 with col1:
-    form = st.empty()
-    with form.form('test1'):
-        st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
-        st.write("")
-        st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).</p>", unsafe_allow_html=True)
-        st.write("")
-        submit = st.form_submit_button("Explore")
+    st.markdown("""
+    <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
+        <h6 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
+            Medical Detection (MediDetect)
+        </h6>
+        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
+            Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
+        </p>
+        <a href="https://github.com/Jeff-04/MediDetect" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
+    </div>
+""", unsafe_allow_html=True)
+
+        # st.markdown("<h5 align='center'> Medical Detection (MediDetect)</h5>", unsafe_allow_html=True)
+        # st.write("")
+        # st.markdown("<p style='text-align:justify; color:#747477;'>Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).</p>", unsafe_allow_html=True)
+        # st.write("")
+        # submit = st.form_submit_button("Explore")
+        # # if submit:
+        # #     js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
+        # #     html = '<img src onerror="{}">'.format(js)
+        # #     div = Div(text=html)
+        # #     st.bokeh_chart(div)
+
         # if submit:
-        #     js = "window.open('https://github.com/Jeff-04/MediDetect')"  # New tab or window
-        #     html = '<img src onerror="{}">'.format(js)
-        #     div = Div(text=html)
-        #     st.bokeh_chart(div)
+        #     # st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
+        #     # webbrowser.open("https://github.com/Jeff-04/MediDetect")\
 
-        if submit:
-            # st.link_button("Go to gallery", "https://github.com/Jeff-04/MediDetect")
-            # webbrowser.open("https://github.com/Jeff-04/MediDetect")\
-
-            # components.iframe("https://github.com/Jeff-04/MediDetect")
-            webbrowser.open_new_tab("https://github.com/Jeff-04/MediDetect")
+        #     # components.iframe("https://github.com/Jeff-04/MediDetect")
+        #     webbrowser.open_new_tab("https://github.com/Jeff-04/MediDetect")
 
 with col2:
     form = st.empty()
@@ -426,17 +436,6 @@ with col3:
             st.bokeh_chart(div)
 
 st.write("")
-st.markdown("""
-    <div style="width: 25%; height: 300px; padding: 20px; border: 2px solid #fff; border-radius: 10px; display: inline-block; background-color: #24242F;">
-        <h5 style="color: white; font-weight: bold; margin-bottom: 10px; text-align: center;">
-            Scholarship Selection System using SVM & SMART
-        </h5>
-        <p style="font-size: 14px; color: white; margin-bottom: 10px; text-align: justify;">
-            Sistem deteksi penyakit berdasarkan gejala menggunakan Machine Learning yang diintegrasikan dengan API (FastAPI).
-        </p>
-        <a href="https://www.example.com" style="color: white; justify-content: center; text-decoration: none; padding: 5px 10px; background-color: #4CAF50; border-radius: 5px; font-size: 14px;">explore</a>
-    </div>
-""", unsafe_allow_html=True)
 col1, col2, col3= st.columns(3, gap='large')
 
 with col1:
